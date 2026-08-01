@@ -1,10 +1,12 @@
-# JoEL Blueprint Library 0.1.0
+# Joel Blueprint Library 0.1.0
 
-![JoEL Blueprint Library — reusable organizational patterns](docs/joel-hero.jpg)
+![Joel Blueprint Library — reusable organizational patterns](joel-hero.jpg)
 
 > A public collection of exact, inspectable starting points for Agencies, Agents, and future Skills.
 
-This repository is the external Blueprint Library for [JoEL](https://github.com/mirkoappel/joel). It is a catalogue and publication surface, not a running Agency. A live Agency can boot, converse, and do local work without this repository. It consults the Library when it deliberately wants to create a new persistent object from a known, versioned starting point.
+This repository is the external Blueprint Library for [Joel](https://github.com/mirkoappel/joel). It is a catalogue and publication surface, not a running Agency. A live Agency can boot, converse, and do local work without this repository. It consults the Library when it deliberately wants to create a new persistent object from a known, versioned starting point.
+
+The Library supports the deeper Joel experiment: testing whether self-improving Agent systems can grow from small, explicit, recursive structures. A published Blueprint is a seed for that exploration, not a promise of finished intelligence. Its value lies in making the starting conditions, boundaries, lineage, and later improvements visible to people and other Agents.
 
 ## Why the Library is separate
 
@@ -24,7 +26,7 @@ A Blueprint is a complete, named, versioned contract for an object that can be m
 
 - an **Agency Blueprint** defines the recursive organizational shape, manager relationship, shared Workspace, Knowledge, and authority boundaries;
 - an **Agent Blueprint** defines a persistent Agent’s role, operating rules, memory boundary, and handoff expectations;
-- a **Skill Blueprint** is a reserved future namespace for a reusable capability contract. JoEL 0.1.0 intentionally ships without a task-specific Skill.
+- a **Skill Blueprint** is a reserved future namespace for a reusable capability contract. Joel 0.1.0 intentionally ships without a task-specific Skill.
 
 A Blueprint is therefore more than a prompt fragment and less than a running process. It describes a reproducible starting condition. Each managed Markdown file records its Blueprint origin and version in frontmatter. The directory path also carries the canonical identity: `<kind>/<name>/<version>`.
 
@@ -34,7 +36,7 @@ Use exact references such as `joel@0.1.0` or `agency-manager@0.1.0`. Do not reso
 
 | Reference | Kind | Produces | Required values |
 | --- | --- | --- | --- |
-| `joel@0.1.0` | Agency | Complete, uninitialized JoEL Root Agency | none |
+| `joel@0.1.0` | Agency | Complete, uninitialized Joel Root Agency | none |
 | `generic@0.1.0` | Agency | Child or standalone Agency | `agency_id`, `agency_name`, `manager_id`, `manager_name` |
 | `agency-manager@0.1.0` | Agent | Agency Manager Agent | `agent_id`, `agent_name` |
 | `generalist@0.1.0` | Agent | General-purpose Agent | `agent_id`, `agent_name`, optional `role` |
@@ -44,7 +46,7 @@ The catalogue is intentionally small. It demonstrates the recursive core without
 
 ## How the Library relates to the Root
 
-The [JoEL runtime repository](https://github.com/mirkoappel/joel) contains a complete `joel@0.1.0` Root seed. This Library contains the same concrete Blueprint below `agencies/joel/0.1.0/` so that it can be inspected and materialized like any other published starting point.
+The [Joel runtime repository](https://github.com/mirkoappel/joel) contains a complete `joel@0.1.0` Root seed. This Library contains the same concrete Blueprint below `agencies/joel/0.1.0/` so that it can be inspected and materialized like any other published starting point.
 
 That duplication is deliberate:
 
@@ -67,7 +69,7 @@ python3 tools/blueprints.py validate
 python3 tools/test_blueprints.py
 ```
 
-Materialize a fresh JoEL Root:
+Materialize a fresh Joel Root:
 
 ```sh
 python3 tools/blueprints.py materialize agency joel@0.1.0 ../joel
@@ -104,8 +106,7 @@ joel-blueprints-0.1.0/
 ├── VERSION
 ├── CHANGELOG.md
 ├── LICENSE
-├── docs/
-│   └── joel-hero.jpg
+├── joel-hero.jpg              # optional visual introduction
 ├── agencies/
 │   ├── joel/0.1.0/          # complete Root Agency Blueprint
 │   └── generic/0.1.0/       # recursive child Agency Blueprint
@@ -173,7 +174,7 @@ When proposing a Blueprint:
 - do not publish a change as “improved” based only on the Agent’s self-assessment;
 - link related Blueprints and explain what is intentionally not included.
 
-Changes to the JoEL constitution, authorization boundary, safety rules, or meaning of evidence require explicit Steward review. Documentation, examples, adapters, and tests are welcome contributions when they remain honest about what was actually exercised.
+Changes to the Joel constitution, authorization boundary, safety rules, or meaning of evidence require explicit Steward review. Documentation, examples, adapters, and tests are welcome contributions when they remain honest about what was actually exercised.
 
 ## A reference for workshops and innovation work
 
@@ -193,7 +194,7 @@ Fork the repository, compare variants, use a Blueprint as a workshop exercise, o
 Included:
 
 - Agency, Agent, and reserved Skill namespaces;
-- one complete JoEL Root Blueprint;
+- one complete Joel Root Blueprint;
 - a recursive generic Agency Blueprint;
 - manager, generalist, and developer Agent Blueprints;
 - exact-reference lookup, validation, and non-destructive materialization;
@@ -212,4 +213,5 @@ These omissions keep the first Library understandable and make future additions 
 
 ## License
 
-The Blueprint Library and its included JoEL materials are released under the [MIT License](LICENSE).
+The Blueprint Library and its included Joel materials are released under the [MIT License](LICENSE).
+
