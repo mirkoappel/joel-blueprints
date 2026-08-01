@@ -7,4 +7,4 @@
 - Added Agency Manager, Generalist, and Developer Agent Blueprints.
 - Added dependency-free listing, validation, and materialization tooling.
 - Established exact pinned references and immutable published versions.
-
+- Released the Blueprint Library under the MIT License.

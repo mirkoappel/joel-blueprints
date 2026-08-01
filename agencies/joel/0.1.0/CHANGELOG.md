@@ -12,3 +12,4 @@
 - Added explicit contract versions.
 - Added dependency-free status, validation, and smoke-test tools.
 - Kept the Blueprint Library external to the running Agency.
+- Released the JoEL seed under the MIT License.

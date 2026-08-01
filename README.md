@@ -84,3 +84,7 @@ A proposed improvement normally travels through:
 Git is the recommended publication, review, rollback, and contribution layer,
 but the on-disk format remains usable in harnesses without Git.
 
+## License
+
+The Blueprint Library and its included JoEL materials are released under the
+MIT License. See [LICENSE](LICENSE).

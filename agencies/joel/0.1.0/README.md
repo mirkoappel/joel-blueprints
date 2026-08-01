@@ -92,3 +92,7 @@ successor JoEL or Blueprint, but active contracts and historical releases are
 not silently rewritten. Record release-level changes in `CHANGELOG.md`.
 
 This release intentionally contains no mission-specific Agency.
+
+## License
+
+JoEL is released under the MIT License. See [LICENSE](LICENSE).
