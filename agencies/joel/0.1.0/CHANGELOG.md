@@ -12,4 +12,8 @@
 - Added explicit contract versions.
 - Added dependency-free status, validation, and smoke-test tools.
 - Kept the Blueprint Library external to the running Agency.
+- Expanded the README into a design brief for the persistent-agency experiment,
+  including first-start behavior, recursion, evolution, authority, portability,
+  workshop use, and contribution guidance.
+- Added a generated conceptual hero image for the repository documentation.
 - Released the JoEL seed under the MIT License.
